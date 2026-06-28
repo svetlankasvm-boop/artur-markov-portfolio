@@ -20,7 +20,7 @@ function TimelineCard({
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.6, delay: index * 0.04, ease: [0.16, 1, 0.3, 1] }}
+      transition={{ duration: 0.6, delay: index * 0.04, ease: [0.16, 1, 0.3, 1] as const }}
     >
       <button
         onClick={() => setExpanded(!expanded)}
@@ -70,7 +70,7 @@ function TimelineCard({
               initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: 0.4, ease: [0.25, 1, 0.5, 1] }}
+              transition={{ duration: 0.4, ease: [0.25, 1, 0.5, 1] as const }}
               className="overflow-hidden"
             >
               <div className="pt-5 mt-5 border-t border-white/[0.04] space-y-4">
@@ -125,7 +125,7 @@ export function TimelineSection() {
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-120px" }}
-          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] as const }}
         >
           <p className="section-label text-center">Карьера</p>
           <h2 className="section-title mb-3">

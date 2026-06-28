@@ -33,7 +33,7 @@ export function ApproachSection() {
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-120px" }}
-          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] as const }}
         >
           <p className="section-label text-center">Философия</p>
           <h2 className="section-title mb-6">
@@ -45,7 +45,7 @@ export function ApproachSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-120px" }}
-          transition={{ duration: 0.7, delay: 0.05, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.7, delay: 0.05, ease: [0.16, 1, 0.3, 1] as const }}
           className="max-w-3xl mx-auto mb-12"
         >
           <p className="text-sm md:text-base text-text-secondary text-center leading-relaxed">
@@ -60,7 +60,7 @@ export function ApproachSection() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.5, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.5, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] as const }}
               className="glass-card-premium rounded-xl p-6 md:p-7"
             >
               <div className="w-9 h-9 rounded-lg bg-accent/10 flex items-center justify-center text-accent mb-4">

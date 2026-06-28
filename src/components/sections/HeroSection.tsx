@@ -11,12 +11,14 @@ const container = {
   },
 };
 
+const ease = [0.16, 1, 0.3, 1] as const;
+
 const item = {
   hidden: { opacity: 0, y: 30 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] },
+    transition: { duration: 0.8, ease },
   },
 };
 
@@ -25,7 +27,7 @@ const metricItem = {
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.7, delay: 0.5 + i * 0.08, ease: [0.16, 1, 0.3, 1] },
+    transition: { duration: 0.7, delay: 0.5 + i * 0.08, ease },
   }),
 };
 

@@ -12,7 +12,7 @@ export function AboutSection() {
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-120px" }}
-          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] as const }}
         >
           <p className="section-label text-center">Обо мне</p>
           <h2 className="section-title mb-12 md:mb-16">
@@ -25,7 +25,7 @@ export function AboutSection() {
             initial={{ opacity: 0, x: -32 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-120px" }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] as const }}
             className="relative"
           >
             <div className="relative w-full max-w-sm mx-auto aspect-[2/3] overflow-hidden rounded-lg">
@@ -45,7 +45,7 @@ export function AboutSection() {
             initial={{ opacity: 0, x: 32 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-120px" }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] as const }}
             className="space-y-6"
           >
             <div className="flex flex-wrap gap-2">

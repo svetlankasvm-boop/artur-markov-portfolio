@@ -44,7 +44,7 @@ export function ResultsSection() {
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-120px" }}
-          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] as const }}
         >
           <p className="section-label text-center">Результаты</p>
           <h2 className="section-title mb-12 md:mb-14">
@@ -59,7 +59,7 @@ export function ResultsSection() {
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
-              transition={{ duration: 0.6, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.6, delay: i * 0.08, ease: [0.16, 1, 0.3, 1] as const }}
               className="glass-card rounded-xl p-6 md:p-7 text-center"
             >
               <div className="w-9 h-9 rounded-lg bg-accent/10 flex items-center justify-center text-accent mx-auto mb-4">
