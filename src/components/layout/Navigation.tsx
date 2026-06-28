@@ -18,7 +18,7 @@ export function Navigation() {
         <a
           key={link.href}
           href={link.href}
-          className="text-xs text-text-secondary tracking-wide hover:text-accent transition-colors duration-300"
+          className="text-[0.6875rem] text-text-tertiary tracking-wide hover:text-accent-dim transition-colors duration-300"
         >
           {link.label}
         </a>
@@ -43,7 +43,7 @@ export function MobileMenu() {
     <>
       <button
         onClick={() => setOpen(true)}
-        className="md:hidden text-text-secondary hover:text-accent transition-colors duration-300"
+        className="md:hidden text-text-tertiary hover:text-accent-dim transition-colors duration-300"
         aria-label="Открыть меню"
       >
         <Menu size={22} />
@@ -58,7 +58,7 @@ export function MobileMenu() {
           <div className="absolute right-0 top-0 h-full w-72 bg-surface-850 p-8 shadow-2xl border-l border-white/5">
             <button
               onClick={() => setOpen(false)}
-              className="absolute top-5 right-5 text-text-secondary hover:text-accent transition-colors"
+              className="absolute top-5 right-5 text-text-tertiary hover:text-accent-dim transition-colors"
               aria-label="Закрыть меню"
             >
               <X size={22} />
@@ -70,7 +70,7 @@ export function MobileMenu() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="text-base text-text-secondary hover:text-accent transition-colors duration-300"
+                  className="text-base text-text-tertiary hover:text-accent-dim transition-colors duration-300"
                 >
                   {link.label}
                 </a>
@@ -80,7 +80,7 @@ export function MobileMenu() {
                   href="/resume.pdf"
                   download="Артур Марков — Руководитель отдела продаж.pdf"
                   onClick={() => setOpen(false)}
-                  className="inline-flex items-center gap-2 text-sm text-accent hover:text-accent-light transition-colors"
+                  className="inline-flex items-center gap-2 text-sm text-accent-dim hover:text-accent transition-colors"
                 >
                   <Download size={16} />
                   Скачать PDF

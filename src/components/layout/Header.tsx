@@ -7,7 +7,7 @@ export function Header() {
       <div className="mx-auto max-w-6xl flex items-center justify-between px-6 h-14 md:h-16">
         <a
           href="#"
-          className="text-xs font-medium text-text-secondary tracking-widest uppercase hover:text-text-primary transition-colors duration-300"
+          className="text-xs font-medium text-text-tertiary tracking-widest uppercase hover:text-text-secondary transition-colors duration-300"
         >
           A. Марков
         </a>
@@ -18,7 +18,7 @@ export function Header() {
           <a
             href="/resume.pdf"
             download="Артур Марков — Руководитель отдела продаж.pdf"
-            className="btn-pdf hidden md:inline-flex"
+            className="btn-pdf hidden md:inline-flex text-[0.6875rem]"
           >
             <Download size={13} />
             PDF

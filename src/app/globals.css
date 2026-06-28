@@ -220,13 +220,13 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--color-text-secondary);
-    font-size: 0.8125rem;
+    color: var(--color-text-tertiary);
+    font-size: 0.6875rem;
     transition: all 0.3s var(--ease-out-quart);
   }
 
   .btn-pdf:hover {
-    color: var(--color-accent);
+    color: var(--color-accent-dim);
   }
 
   .section-label {
