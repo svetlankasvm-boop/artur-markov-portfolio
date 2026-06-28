@@ -7,7 +7,7 @@ import { resume } from "@/data/resume";
 
 export function AboutSection() {
   return (
-    <section id="about" className="section-padding bg-surface-900/50">
+    <section id="about" className="section-padding bg-surface-850">
       <div className="mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
