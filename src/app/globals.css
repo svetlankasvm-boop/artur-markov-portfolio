@@ -219,7 +219,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--color-text-tertiary);
+    color: var(--color-text-secondary);
     font-size: 0.6875rem;
     transition: all 0.3s var(--ease-out-quart);
   }

@@ -18,7 +18,7 @@ export function Navigation() {
         <a
           key={link.href}
           href={link.href}
-          className="text-[0.6875rem] text-text-tertiary tracking-wide hover:text-accent-dim transition-colors duration-300"
+          className="text-xs text-text-secondary tracking-wide hover:text-accent transition-colors duration-300"
         >
           {link.label}
         </a>
@@ -43,7 +43,7 @@ export function MobileMenu() {
     <>
       <button
         onClick={() => setOpen(true)}
-        className="md:hidden text-text-tertiary hover:text-accent-dim transition-colors duration-300"
+        className="md:hidden text-text-secondary hover:text-accent transition-colors duration-300"
         aria-label="Открыть меню"
       >
         <Menu size={22} />
