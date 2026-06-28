@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { GraduationCap } from "lucide-react";
 import { resume } from "@/data/resume";
 
 export function AboutSection() {
@@ -60,9 +61,21 @@ export function AboutSection() {
               </span>
             </div>
 
-            <p className="text-sm md:text-base text-text-secondary leading-relaxed">
-              {resume.summary}
+            <p className="text-sm md:text-base text-text-secondary leading-relaxed whitespace-pre-line">
+              {resume.aboutText}
             </p>
+
+            <div className="glass-card-premium rounded-xl p-5 flex items-start gap-4">
+              <div className="w-9 h-9 rounded-lg bg-accent/10 flex items-center justify-center text-accent flex-shrink-0">
+                <GraduationCap size={17} />
+              </div>
+              <div>
+                <p className="text-[0.6875rem] text-text-tertiary tracking-wide uppercase mb-1">Образование</p>
+                <p className="text-sm font-medium leading-snug mb-0.5">{resume.education.institution}</p>
+                <p className="text-xs text-text-secondary">{resume.education.faculty} — {resume.education.specialty}</p>
+                <span className="inline-block mt-2 text-[0.625rem] px-2 py-0.5 rounded bg-accent/10 text-accent/90">{resume.education.year} год</span>
+              </div>
+            </div>
 
             <div className="pt-5 border-t border-white/[0.04]">
               <p className="text-[0.6875rem] text-text-tertiary tracking-wide uppercase mb-3">

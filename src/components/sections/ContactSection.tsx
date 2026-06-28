@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Phone, Mail, Download, Copy, Check } from "lucide-react";
+import { Phone, Mail, Copy, Check } from "lucide-react";
 import { resume } from "@/data/resume";
 import { useState } from "react";
 
@@ -84,7 +84,7 @@ export function ContactSection() {
             </a>
           </div>
 
-          <div className="text-center space-y-4">
+          <div className="text-center">
             <a
               href={`mailto:${resume.email}`}
               className="btn-primary"
@@ -92,17 +92,6 @@ export function ContactSection() {
               <Mail size={15} />
               Написать мне
             </a>
-
-            <div className="flex justify-center pt-2">
-              <a
-                href="/resume.pdf"
-                download="Артур Марков — Руководитель отдела продаж.pdf"
-                className="btn-pdf"
-              >
-                <Download size={13} />
-                Скачать PDF
-              </a>
-            </div>
           </div>
         </motion.div>
       </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Download, ArrowDown } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import { resume } from "@/data/resume";
 
 const container = {
@@ -62,7 +62,7 @@ export function HeroSection() {
             variants={item}
             className="text-base md:text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed px-4"
           >
-            {resume.summary}
+            {resume.heroTagline}
           </motion.p>
 
           <motion.div
@@ -75,14 +75,7 @@ export function HeroSection() {
             >
               Обсудить возможности
             </a>
-            <a
-              href="/resume.pdf"
-              download="Артур Марков — Руководитель отдела продаж.pdf"
-              className="btn-secondary"
-            >
-              <Download size={15} />
-              Скачать резюме
-            </a>
+
           </motion.div>
         </motion.div>
 
