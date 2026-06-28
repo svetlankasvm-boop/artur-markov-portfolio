@@ -13,13 +13,11 @@ export default function Home() {
       <div className="section-divider" />
       <AboutSection />
 
-      <div className="section-divider" />
       <CaseStudiesSection />
 
       <div className="section-divider" />
       <TimelineSection />
 
-      <div className="section-divider" />
       <CompetenciesSection />
 
       <div className="section-divider" />

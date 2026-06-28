@@ -53,7 +53,7 @@ export function HeroSection() {
 
           <motion.h1
             variants={item}
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-heading font-bold leading-[0.95] tracking-tight"
+            className="text-5xl sm:text-6xl md:text-7xl lg:text-7xl font-heading font-bold leading-[0.95] tracking-tight"
           >
             {resume.name}
           </motion.h1>

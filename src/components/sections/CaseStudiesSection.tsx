@@ -20,7 +20,7 @@ const labelMap: Record<string, string> = {
 
 export function CaseStudiesSection() {
   return (
-    <section id="cases" className="section-padding bg-surface-900/50">
+    <section id="cases" className="section-padding">
       <div className="mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 24 }}

@@ -119,7 +119,7 @@ function TimelineCard({
 
 export function TimelineSection() {
   return (
-    <section id="timeline" className="section-padding">
+    <section id="timeline" className="section-padding bg-surface-900/50">
       <div className="mx-auto max-w-3xl">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
