@@ -39,7 +39,6 @@ export function AboutSection() {
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
-            <div className="absolute -bottom-3 -right-3 w-20 h-20 border border-accent/20 rounded-lg hidden md:block pointer-events-none" />
           </motion.div>
 
           <motion.div
